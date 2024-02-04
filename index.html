@@ -12,11 +12,19 @@
   </head>
   <body>
     <main>
+      <fieldset id="choose-domain">
+        <legend>Use domains</legend>
+        <label><input type="checkbox" name="premium-promptly-snail.ngrok-free.app" data-authtoken="2VWSdfMKG2NZdQX2z7R5WHsQiTg_P8ss4CK4EzozrrRYTnxv" />premium-promptly-snail.ngrok-free.app</label>
+        <label><input type="checkbox" name="fleet-bluebird-polished.ngrok-free.app" data-authtoken="2ahPEpE2q1ntpVDvVLeuTRyhoGi_89wgoryFz3dE8rz6KEZ1w" />fleet-bluebird-polished.ngrok-free.app</label>
+        <label><input type="checkbox" name="whippet-blessed-bedbug.ngrok-free.app" data-authtoken="2bPg9KgLwfOKJUTacd5BnRohgI3_7kx69hmm4JBKDtgnTXrBK" />whippet-blessed-bedbug.ngrok-free.app</label>
+        <label><input type="checkbox" name="finer-toad-ample.ngrok-free.app" data-authtoken="2bPhBibXbwqvWNHcHHZrZibw4ZQ_7kfszXf6da467jzLJXSDx" />finer-toad-ample.ngrok-free.app</label>
+        <label><input type="checkbox" name="crucial-presently-tiger.ngrok-free.app" data-authtoken="2bPhPdQQ5y8NZFaylELRhuenLCO_7aPEyYzfXdAyVtPqpTUYc" />crucial-presently-tiger.ngrok-free.app</label>
+      </fieldset>
       <button onclick="run()">Run</button>
       <div id="add-options">
-        <input type="text" id="add-url" placeholder="https://" onkeypress="addItem(this, event);" />
-        <input type="text" id="add-name" placeholder="name" onkeypress="addItem(this, event);" />
-        <div id="add-new-item" onclick="addItem(this, event);">
+        <input type="text" id="add-url" class="url" placeholder="https://" onkeypress="addItem(this, event);" />
+        <input type="text" id="add-name" class="name" placeholder="name" onkeypress="addItem(this, event);" />
+        <div id="add-item" onclick="addItem(this, event);">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
             <path d="M50 10 50 90 M10 50 90 50" stroke-width="20" />
           </svg>
