@@ -81,14 +81,12 @@ async function run() {
       downloads.push(newDownload);
     });
 
-    payload["text"] = payload["text"].replace("([])", "(" + JSON.stringify(downloads).replaceAll(`\"`, `\'`) + ")");
-    const originalText = payload["text"];
+    const originalText = payload["text"].replace("([])", "(" + JSON.stringify(downloads).replaceAll(`\"`, `\'`) + ")");
 
     document.querySelector("button").disabled = true;
     document.querySelector("button").style.backgroundColor = "var(--secondary-background-color)";
 
-    for (const domain of Array.from(document.querySelectorAll("#choose-domain input[type=checkbox]"))) {
-      if (!domain.checked) continue;
+    for (const domain of Array.from(document.querySelectorAll("#choose-domain input[type=checkbox]:checked"))) {
       const notebookId = "n-" + new Date().getTime().toString(36);
       payload["slug"] = "dr12ak/" + notebookId;
       payload["newTitle"] = notebookId;
