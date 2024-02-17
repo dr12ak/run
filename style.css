@@ -94,6 +94,7 @@ li > * {
 li + li {
   margin-top: -1px;
 }
+
 #choose-domain {
   display: flex;
   flex-direction: column;
@@ -101,6 +102,14 @@ li + li {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   margin: 0;
+}
+#choose-domain > label {
+  -webkit-touch-callout: text; /* iOS Safari */
+  -webkit-user-select: text; /* Safari */
+  -khtml-user-select: text; /* Konqueror HTML */
+  -moz-user-select: text; /* Old versions of Firefox */
+  -ms-user-select: text; /* Internet Explorer/Edge */
+  user-select: text; /* Non-prefixed version, currently */
 }
 
 .domain {
